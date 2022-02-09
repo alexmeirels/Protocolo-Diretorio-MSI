@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Alexm/Desktop/Pratica5_parte2/Processador1.v
+source_file = 1, C:/Users/Alexm/Desktop/Pratica5_parte2/Diretorio.v
+source_file = 1, C:/Users/Alexm/Desktop/Pratica5_parte2/Memoria.v
+source_file = 1, C:/Users/Alexm/Desktop/Pratica5_parte2/Lista.v
+source_file = 1, C:/Users/Alexm/Desktop/Pratica5_parte2/CodigoTeste.v
+source_file = 1, C:/Users/Alexm/Desktop/Pratica5_parte2/Processador2.v
+source_file = 1, C:/Users/Alexm/Desktop/Pratica5_parte2/db/Diretorio.cbx.xml
+design_name = Diretorio
+instance = comp, \Clock~I , Clock, Diretorio, 1
