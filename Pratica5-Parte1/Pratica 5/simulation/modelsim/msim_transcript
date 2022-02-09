@@ -1,0 +1,51 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Diretorio_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5\ Período/Lab\ Aoc\ II/Pratica5-Parte1/Pratica\ 5 {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+# vlog -vlog01compat -work work +incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5\ Período/Lab\ Aoc\ II/Pratica5-Parte1/Pratica\ 5 {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/testbench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# vlog -vlog01compat -work work +incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5\ Período/Lab\ Aoc\ II/Pratica5-Parte1/Pratica\ 5 {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module maquinaDeEstado
+# 
+# Top level modules:
+# 	maquinaDeEstado
+# 
+vsim work.Diretorio
+# vsim work.Diretorio 
+# Loading work.Diretorio
+# Loading work.testbench
+# Loading work.maquinaDeEstado
+add wave -position insertpoint  \
+sim:/Diretorio/stateCache \
+sim:/Diretorio/stateCache2 \
+sim:/Diretorio/stateDiretorio \
+sim:/Diretorio/WriteRead \
+sim:/Diretorio/invalidate \
+sim:/Diretorio/signal \
+sim:/Diretorio/newStateCache \
+sim:/Diretorio/newStateCache2 \
+sim:/Diretorio/newStateDiretorio \
+sim:/Diretorio/WriteBack \
+sim:/Diretorio/HitMiss
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 3000ps sim:/Diretorio/Clock
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/Diretorio/Clock
+run
