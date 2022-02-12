@@ -11,6 +11,7 @@ entity Lista is
         DataMemory      : in     vl_logic_vector(3 downto 0);
         AddressMemory   : in     vl_logic_vector(3 downto 0);
         Processor       : in     vl_logic_vector(1 downto 0);
-        Invalidate      : in     vl_logic_vector(1 downto 0)
+        Invalidate      : in     vl_logic_vector(1 downto 0);
+        WriteOrRead     : in     vl_logic_vector(1 downto 0)
     );
 end Lista;

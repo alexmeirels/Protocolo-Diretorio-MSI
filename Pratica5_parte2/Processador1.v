@@ -1,9 +1,9 @@
 module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest, 
 						HitOrMissP2, HitOrMissP1, AddressMemory, DataMemory, AddressCacheP0_0, 
-						AddressLista, DataLista, DataCacheP0_0, WriteBack, Signal);
+						AddressLista, DataLista, DataCacheP0_0, WriteBack, Signal, Invalidate);
 
 	input Clock;
-	input [3:0] AddressCacheP0_0, DataCacheP0_0;
+
 	// Variáveis do Codigo Teste 
 	input [3:0] AddressTest;		// Endereços
 	input [1:0] WriteOrRead; 		// 00 Write e 01 Read
@@ -14,14 +14,17 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 	input [3:0] AddressMemory, DataMemory;
 	
 	output reg[1:0] HitOrMissP1, WriteBack;
-	output reg[3:0] AddressLista, DataLista;
+	output reg[3:0] AddressLista, DataLista, AddressCacheP0_0, DataCacheP0_0;
 	 
-	output reg[1:0] Signal;
-	/*
+	output reg[1:0] Signal, Invalidate;
+	/*Signal
 		empty 	  - 00
 		ReadMiss	  - 01
 		WriteMiss  - 10
-		Invalidate - 11	
+	-------------------
+		Invalidate
+		Hit - 01
+		Miss - 00
 	*/
 	
 	
@@ -37,7 +40,7 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 	
 	
 	// Contador
-	integer cont, i;
+	integer cont, i, aux;
 	
 	initial begin	
 // Processador P0,0 - CacheL1
@@ -51,6 +54,7 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 //------------------------------------------------------------------------------------------
 
 		cont = 0;
+		aux = 0;
 	end
 	
 	always@(negedge Clock)begin
@@ -88,16 +92,35 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 		
 		if(HitOrMissP2 == 2'b00)
 			begin
-			if(HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && WriteOrRead == 2'b00 && HitOrMiss == 2'b00) // ReadMiss
+			if(HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && WriteOrRead == 2'b00 && HitOrMiss == 2'b00 && aux == 1) // ReadMiss com WriteBack
+				begin
+					WriteBack = 2'b01; // Hit
+					#2
+					Signal = 2'b01;	// Read Miss
+					DataCacheP0_0 = regDataP0_0[0];			// Dado que passará para memória por conta do writeback
+					AddressCacheP0_0 = regAddressP0_0[0];	// Endereço que passará para memória por conta do writeback
+					regAddressP0_0[0] <= AddressMemory;	// Recebe o valor da memória
+					regDataP0_0[0] <= DataMemory;			// Recebe o valor da memória
+					regStateP0_0[0] = 2'b10;
+				end
+			if(HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && WriteOrRead == 2'b00 && HitOrMiss == 2'b00 && aux != 1) // ReadMiss
 				begin
 					#2;
 					Signal = 2'b01;	// Read Miss
 					regAddressP0_0[1] <= AddressMemory;	// Recebe o valor da memória
 					regDataP0_0[1] <= DataMemory;			// Recebe o valor da memória
 					regStateP0_0[1] = 2'b10;				//	O estado é mudado para Shared
+					aux = 1;
 				end
+			
 			end
-		
+		if(WriteOrRead == 2'b01 && HitOrMiss == 2'b01 && regStateP0_0[1] == 2'b10)	// Write Miss - Shared
+			begin
+				Signal = 2'b10;		// Write Miss
+				Invalidate = 2'b01;	// Hit
+				regDataP0_0[1] = DataTest;		// recebe o valor que vai ser escrito
+				regStateP0_0[1] = 2'b11;	//	Muda o estado para modificado
+			end
 		end
 	
 endmodule

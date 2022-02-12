@@ -69,7 +69,10 @@ module CodigoTeste(Clock, AddressTest, WriteOrRead, Processor, DataTest);
 		regDataTest[2] = 4'b0111;		// 78
 		
 		//	P0,0: read 120
-		
+		regAddressTest[3] = 4'b0101;	// 120
+		regWriteOrRead[3] = 2'b00;		// Read
+		regProcessor[3] = 2'b00;		// P0,0
+		regDataTest[3] = 4'b0000;		// vazia
 		
 		// P0,1: read 120 Falha de leitura na cache L1
 		

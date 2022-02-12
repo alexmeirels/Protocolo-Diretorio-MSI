@@ -1,8 +1,8 @@
-module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, Signal, DataMemory, AddressMemory, Processor, Invalidate);
+module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, Signal, DataMemory, AddressMemory, Processor, Invalidate, WriteOrRead);
 
 	input Clock;
 	
-	input[1:0] Processor;
+	input[1:0] Processor, WriteOrRead;
 	input[1:0] Signal, Invalidate;
 	input[1:0] HitOrMissP2;
 	input[1:0] HitOrMissP1;
@@ -20,8 +20,9 @@ module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, Signal, Dat
 	reg[1:0] regSharersLista[3:0];			// Sharers
 	reg[1:0] signalSharers;				//	sinal do Sharers
 	
+	
 	// Contador
-	integer cont, i;
+	integer cont, i, aux;
 	
 	/* Address
 	empty - 0000
@@ -96,22 +97,39 @@ module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, Signal, Dat
 
 //------------------------------------------------------------------------------------------
 	cont = 0;
+	aux = 0;
 	end
 	
 	always@(negedge Clock) begin
 		signalSharers = 2'b00;
 			
 		#4;
-		if(HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && Processor == 2'b00 && Signal == 2'b01)
+		if(Signal == 2'b01 && HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && Processor == 2'b00 && aux ==1) // Letra D
+			begin
+				signalSharers = 2'b11;						// Sharers = Sharers + {P}
+				regAddressLista[0] <= AddressMemory;
+				regDataLista[0] <= DataMemory;
+				regSharersLista[0] = 2'b01;				// P0_0
+				regStateLista[0] = 2'b10;					//	O estado é mudado para Shared
+			end
+		if(HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && Processor == 2'b00 && Signal == 2'b01 && aux !=1) // Letra b
 			begin
 				regAddressLista[1] <= AddressMemory;	// Recebe o valor da memória
 				regDataLista[1] <= DataMemory;			// Recebe o valor da memória
 				regStateLista[1] = 2'b10;					//	O estado é mudado para Shared
 				regSharersLista[1] = 2'b01;				// P0_0
 				signalSharers = 2'b10;						// Sharers = {P}
+				aux = 1;
 			end
 			
-
+		if(Signal == 2'b10 && Invalidate == 2'b01 && HitOrMissP1 == 2'b01 && WriteOrRead == 2'b01) // Letra c
+			begin
+				signalSharers = 2'b10;						// Sharers = {P}
+				regSharersLista[1] = 2'b01;				// P0_0
+				regDataLista[1] = DataTest;				// 
+				regStateLista[1] = 2'b11;					//	O estado é mudado para Modificado
+			end
+		
 	end
 
 endmodule

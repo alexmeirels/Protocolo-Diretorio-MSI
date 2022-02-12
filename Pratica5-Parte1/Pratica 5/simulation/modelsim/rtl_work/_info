@@ -2,56 +2,56 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Alexm\Desktop\Pessoal\facul\5 Período\Lab Aoc II\Pratica5-Parte1\Pratica 5\simulation\modelsim
+Z0 dC:\Users\Alexm\Desktop\Pessoal\facul\5 Período\Lab Aoc II\LAOC\Protocolo-Diretorio-MSI\Pratica5-Parte1\Pratica 5\simulation\modelsim
 vDiretorio
-IEo`R>go^<nc`K]0YX:7Tf1
+InZ87460m;S`a]Y^5H1h7V1
 VWRMm=QnLcVPdlTTEMci<V0
-Z1 dC:\Users\Alexm\Desktop\Pessoal\facul\5 Período\Lab Aoc II\Pratica5-Parte1\Pratica 5\simulation\modelsim
+Z1 dC:\Users\Alexm\Desktop\Pessoal\facul\5 Período\Lab Aoc II\LAOC\Protocolo-Diretorio-MSI\Pratica5-Parte1\Pratica 5\simulation\modelsim
 w1644003468
-8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/Diretorio.v
-FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/Diretorio.v
+8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/Diretorio.v
+FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/Diretorio.v
 L0 1
 Z2 OV;L;10.1d;51
 r1
 31
 Z3 o-vlog01compat -work work -O0
 n@diretorio
-Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5} -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5} -O0
 !i10b 1
-!s100 Y5Lj6:8BTW;5PH;N4>>Pz2
+!s100 h6RXe?B8QdTCzYnmN7FD@2
 !s85 0
-!s108 1644338095.731000
-!s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/Diretorio.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/Diretorio.v|
+!s108 1644550715.467000
+!s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/Diretorio.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/Diretorio.v|
 !s101 -O0
 vmaquinaDeEstado
 !i10b 1
-!s100 a7?PcZFBlYcCR`MLkigf93
-IcjT?2AAkM;ZPa]I5]>V5:0
+!s100 fn3dhB[0djR<l3QIKahj21
+ILE:mgg^NWk;A;nI<;ZCW;2
 VU8LIncXzBd3:4[CLlfFcH3
 R1
 w1644004191
-8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v
-FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v
+8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v
+FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v
 L0 1
 R2
 r1
 !s85 0
 31
-!s108 1644338095.882000
-!s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v|
+!s108 1644550715.631000
+!s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v|
 !s101 -O0
 R3
 R4
 nmaquina@de@estado
 vtestbench
-I]e`;?l=bN0gZ:ko24I?:G2
+I6mH1OnAOSkgS8XNObgMbV1
 V^]>UJh2`bKSiEX1YzQcAC3
 R1
 w1644005805
-8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/testbench.v
-FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/testbench.v
+8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/testbench.v
+FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/testbench.v
 L0 1
 R2
 r1
@@ -59,9 +59,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 eRW?]9mODnKcPZ=J9fRNL0
+!s100 ;I0XF?j5:1gGo4^ifiVQP1
 !s85 0
-!s108 1644338095.804000
-!s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/testbench.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/testbench.v|
+!s108 1644550715.556000
+!s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/testbench.v|
 !s101 -O0

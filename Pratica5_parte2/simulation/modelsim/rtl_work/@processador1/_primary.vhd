@@ -11,11 +11,12 @@ entity Processador1 is
         HitOrMissP1     : out    vl_logic_vector(1 downto 0);
         AddressMemory   : in     vl_logic_vector(3 downto 0);
         DataMemory      : in     vl_logic_vector(3 downto 0);
-        AddressCacheP0_0: in     vl_logic_vector(3 downto 0);
+        AddressCacheP0_0: out    vl_logic_vector(3 downto 0);
         AddressLista    : out    vl_logic_vector(3 downto 0);
         DataLista       : out    vl_logic_vector(3 downto 0);
-        DataCacheP0_0   : in     vl_logic_vector(3 downto 0);
+        DataCacheP0_0   : out    vl_logic_vector(3 downto 0);
         WriteBack       : out    vl_logic_vector(1 downto 0);
-        \Signal\        : out    vl_logic_vector(1 downto 0)
+        \Signal\        : out    vl_logic_vector(1 downto 0);
+        Invalidate      : out    vl_logic_vector(1 downto 0)
     );
 end Processador1;

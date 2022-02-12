@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/Diretorio.v
-source_file = 1, C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/testbench.v
-source_file = 1, C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v
-source_file = 1, C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/Pratica5-Parte1/Pratica 5/db/Diretorio.cbx.xml
+source_file = 1, C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/Diretorio.v
+source_file = 1, C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/testbench.v
+source_file = 1, C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/maquinaDeEstado.v
+source_file = 1, C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5-Parte1/Pratica 5/db/Diretorio.cbx.xml
 design_name = Diretorio
 instance = comp, \Clock~I , Clock, Diretorio, 1

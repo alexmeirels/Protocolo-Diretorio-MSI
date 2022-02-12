@@ -10,10 +10,10 @@ entity Memoria is
         DataTest        : in     vl_logic_vector(3 downto 0);
         HitOrMissP2     : in     vl_logic_vector(1 downto 0);
         HitOrMissP1     : in     vl_logic_vector(1 downto 0);
-        AddressCacheP0_0: out    vl_logic_vector(3 downto 0);
-        AddressCacheP0_1: out    vl_logic_vector(3 downto 0);
-        DataCacheP0_0   : out    vl_logic_vector(3 downto 0);
-        DataCacheP0_1   : out    vl_logic_vector(3 downto 0);
+        AddressCacheP0_0: in     vl_logic_vector(3 downto 0);
+        AddressCacheP0_1: in     vl_logic_vector(3 downto 0);
+        DataCacheP0_0   : in     vl_logic_vector(3 downto 0);
+        DataCacheP0_1   : in     vl_logic_vector(3 downto 0);
         Processor       : in     vl_logic_vector(1 downto 0)
     );
 end Memoria;

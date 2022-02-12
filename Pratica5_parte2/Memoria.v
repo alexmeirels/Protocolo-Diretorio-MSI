@@ -5,9 +5,9 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 	input Clock;
 	input [1:0] WriteBack, HitOrMissP2, HitOrMissP1, Processor;
 	input [3:0] AddressTest, DataTest;
+	input [3:0] AddressCacheP0_0, AddressCacheP0_1, DataCacheP0_1, DataCacheP0_0;
 	
 	output reg [3:0] AddressMemory, DataMemory;
-	output reg [3:0] AddressCacheP0_0, AddressCacheP0_1, DataCacheP0_1, DataCacheP0_0;
 	
 	reg [3:0]regAddressMemory[7:0], regDataMemory[7:0];
 	
@@ -42,9 +42,8 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 	
 	always@(negedge Clock)begin
 		#1
-		if(WriteBack == 2'b00 && HitOrMissP1 == 2'b00) // HitOrMissP2 == 2'b00 && Tme que coloca para o processador 2
+		if(WriteBack == 2'b00 && HitOrMissP2 == 2'b00 && HitOrMissP1 == 2'b00) //  FICAR DE OLHO NESSA LINHA
 			begin
-				
 				for(i = 0; i < 8; i = i + 1)
 					begin
 						if(regAddressMemory[i] == AddressTest)
@@ -62,6 +61,33 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 									end
 							end
 					end
+				end
+				
+			if(WriteBack == 2'b01 && HitOrMissP1 == 2'b00 && HitOrMissP1 == 2'b00) //  FICAR DE OLHO NESSA LINHA
+			begin
+				for(i = 0; i < 8; i = i + 1)
+					begin
+						if(regAddressMemory[i] == AddressTest)
+							begin
+								if(Processor == 2'b00)
+									begin
+										testeMemory = 1000;
+										AddressMemory <= regAddressMemory[i];
+										DataMemory <= regDataMemory[i];
+									end
+								else if(Processor == 2'b01)
+									begin
+										AddressMemory <= regAddressMemory[i];
+										DataMemory <= regDataMemory[i];
+									end
+							end
+						else if(regAddressMemory[i] == AddressCacheP0_0)
+							begin
+								
+								regDataMemory[i] = DataCacheP0_0;
+							end
+					end
+					
 				end
 	
 	end
