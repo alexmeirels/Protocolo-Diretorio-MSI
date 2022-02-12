@@ -66,76 +66,156 @@ vsim work.Diretorio
 #         Region: /Diretorio/P2
 # ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
 # 
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(45): [TFMPC] - Too few port connections. Expected 10, found 9.
-# 
-#         Region: /Diretorio/Diretorio
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(45): [TFMPC] - Missing connection for port 'Invalidate'.
-# 
 wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Diretorio/Clock
 add wave -position insertpoint  \
 sim:/Diretorio/P1/regAddressP0_0 \
 sim:/Diretorio/P1/regStateP0_0 \
 sim:/Diretorio/P1/regDataP0_0
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
 add wave -position insertpoint  \
 sim:/Diretorio/Diretorio/regAddressLista \
 sim:/Diretorio/Diretorio/regStateLista \
 sim:/Diretorio/Diretorio/regDataLista \
 sim:/Diretorio/Diretorio/regSharersLista
+add wave -position insertpoint  \
+sim:/Diretorio/Clock \
+sim:/Diretorio/AddressTest \
+sim:/Diretorio/Processor \
+sim:/Diretorio/DataTest
+add wave -position insertpoint  \
+sim:/Diretorio/WriteOrRead
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P1/cont
+restart
+# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
+# 
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v(120): near "Signal": syntax error, unexpected IDENTIFIER, expecting ';'
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
+# 
+run
+add wave -position insertpoint  \
+sim:/Diretorio/Diretorio/signalSharers
+restart
+# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
+# 
+run
+add wave -position insertpoint  \
+sim:/Diretorio/Invalidate
+restart
+# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
+# 
 run
 vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -192,6 +272,25 @@ restart
 # ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
 # 
 run
+add wave -position insertpoint  \
+sim:/Diretorio/Signal
+add wave -position insertpoint  \
+sim:/Diretorio/HitOrMissP1
+add wave -position insertpoint  \
+sim:/Diretorio/HitOrMissP2
+restart
+# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
+# 
+run
 vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module CodigoTeste
@@ -247,556 +346,10 @@ restart
 # ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
 # 
 run
-restart
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
 add wave -position insertpoint  \
 sim:/Diretorio/MemoriaPrincipal/regAddressMemory \
 sim:/Diretorio/MemoriaPrincipal/regDataMemory
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
 restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-run
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2730) Undefined variable: 'regDataListaLista'.
-# 
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2730) Undefined variable: 'regDataListaLista'.
-# 
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
 # ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
 # 
 #         Region: /Diretorio/P2
@@ -810,10 +363,1257 @@ restart
 # 
 run
 add wave -position insertpoint  \
+sim:/Diretorio/WriteBack
+restart
+# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
+# 
+#         Region: /Diretorio/P2
+# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
+# 
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v(64): (vlog-2730) Undefined variable: 'WriteBack'.
+# 
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(79): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(91): near "end": syntax error, unexpected end
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v(64): (vlog-2730) Undefined variable: 'WriteBack'.
+# 
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v(64): (vlog-2730) Undefined variable: 'WriteBack'.
+# 
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v(3): Identifier must be declared with a port mode: WriteBack.
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vsim work.Diretorio
+# vsim work.Diretorio 
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Diretorio/Clock
+add wave -position insertpoint  \
+sim:/Diretorio/P2/aux
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(86): near "<": syntax error, unexpected '<'
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v(81): near "]": syntax error, unexpected ']'
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P2/regAddressP0_1 \
+sim:/Diretorio/P2/regStateP0_1 \
+sim:/Diretorio/P2/regDataP0_1
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/WriteBack
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(132): near ")": syntax error, unexpected ')'
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(132): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(139): near "end": syntax error, unexpected end
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+add wave -position insertpoint  \
+sim:/Diretorio/P2/regAddressP0_1 \
+sim:/Diretorio/P2/regStateP0_1 \
+sim:/Diretorio/P2/regDataP0_1
+add wave -position insertpoint  \
+sim:/Diretorio/Diretorio/regAddressLista \
+sim:/Diretorio/Diretorio/regStateLista \
+sim:/Diretorio/Diretorio/regDataLista \
+sim:/Diretorio/Diretorio/regSharersLista \
+sim:/Diretorio/Diretorio/signalSharers
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+add wave -position insertpoint  \
+sim:/Diretorio/Diretorio/cont
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/Signal
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vsim work.Diretorio
+# vsim work.Diretorio 
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+add wave -position insertpoint  \
+sim:/Diretorio/SignalP1 \
+sim:/Diretorio/SignalP2
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 1000ps sim:/Diretorio/Clock
+restart
+run
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/Diretorio/Clock
+add wave -position insertpoint  \
+sim:/Diretorio/P1/regAddressP0_0 \
+sim:/Diretorio/P1/regStateP0_0 \
+sim:/Diretorio/P1/regDataP0_0
+restart
+run
+add wave -position insertpoint  \
 sim:/Diretorio/Diretorio/regAddressLista \
 sim:/Diretorio/Diretorio/regStateLista \
 sim:/Diretorio/Diretorio/regDataLista \
 sim:/Diretorio/Diretorio/regSharersLista
+restart
+run
+# WARNING: No extended dataflow license exists
 vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module CodigoTeste
@@ -857,17 +1657,20 @@ restart
 # Loading work.CodigoTeste
 # Loading work.Memoria
 # Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
+run
+add wave -position insertpoint  \
+sim:/Diretorio/WriteBack
+restart
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P1/regAddressP0_0 \
+sim:/Diretorio/P1/regStateP0_0 \
+sim:/Diretorio/P1/regDataP0_0
+add wave -position insertpoint  \
+sim:/Diretorio/P2/regAddressP0_1 \
+sim:/Diretorio/P2/regStateP0_1 \
+sim:/Diretorio/P2/regDataP0_1
+restart
 run
 vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -912,84 +1715,9 @@ restart
 # Loading work.CodigoTeste
 # Loading work.Memoria
 # Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-run
+add wave -position insertpoint  \
+sim:/Diretorio/P2/cont
 restart
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module CodigoTeste
-# 
-# Top level modules:
-# 	CodigoTeste
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Diretorio
-# 
-# Top level modules:
-# 	Diretorio
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Lista
-# 
-# Top level modules:
-# 	Lista
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Memoria
-# 
-# Top level modules:
-# 	Memoria
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador1
-# 
-# Top level modules:
-# 	Processador1
-vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Processador2
-# 
-# Top level modules:
-# 	Processador2
-restart
-# Loading work.Diretorio
-# Loading work.Processador1
-# Loading work.Processador2
-# Loading work.CodigoTeste
-# Loading work.Memoria
-# Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
 run
 vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
@@ -1034,15 +1762,358 @@ restart
 # Loading work.CodigoTeste
 # Loading work.Memoria
 # Loading work.Lista
-# ** Warning: (vsim-3017) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Too few port connections. Expected 8, found 7.
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'WriteOrRead'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3015) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [PCDPC] - Port size (3 or 3) does not match connection size (2) for port 'Processor'. The port definition is at: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(1).
-# 
-#         Region: /Diretorio/P2
-# ** Warning: (vsim-3722) C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(37): [TFMPC] - Missing connection for port 'WriteBack'.
-# 
 run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/HitOrMissP2
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+add wave -position insertpoint  \
+sim:/Diretorio/Diretorio/regAddressLista \
+sim:/Diretorio/Diretorio/regStateLista \
+sim:/Diretorio/Diretorio/regDataLista \
+sim:/Diretorio/Diretorio/regSharersLista \
+sim:/Diretorio/Diretorio/signalSharers
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2

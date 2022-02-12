@@ -50,43 +50,59 @@ module CodigoTeste(Clock, AddressTest, WriteOrRead, Processor, DataTest);
 	
 		cont = 0;
 		
-		// P0,0: read 100
+		// P0,0: read 100 - Feito
 		regAddressTest[0] = 4'b0001;	// 100
 		regWriteOrRead[0] = 2'b00;		// Read
 		regProcessor[0] = 2'b00;		// P0,0
 		regDataTest[0] = 4'b0000;		// vazia
 		
-		// P0,0: read 128
+		// P0,0: read 128 - Feito
 		regAddressTest[1] = 4'b0110;	// 128
 		regWriteOrRead[1] = 2'b00;		// Read
 		regProcessor[1] = 2'b00;		// P0,0
 		regDataTest[1] = 4'b0000;		// vazia
 		
-		// P0,0: write 128 < -- 78
+		// P0,0: write 128 < -- 78 - Feito
 		regAddressTest[2] = 4'b0110;	// 128
 		regWriteOrRead[2] = 2'b01;		// Write
 		regProcessor[2] = 2'b00;		// P0,0
 		regDataTest[2] = 4'b0111;		// 78
 		
-		//	P0,0: read 120
+		//	P0,0: read 120 - Feito
 		regAddressTest[3] = 4'b0101;	// 120
 		regWriteOrRead[3] = 2'b00;		// Read
 		regProcessor[3] = 2'b00;		// P0,0
 		regDataTest[3] = 4'b0000;		// vazia
 		
-		// P0,1: read 120 Falha de leitura na cache L1
+		// P0,1: read 120 Falha de leitura na cache L1 - Feito
+		regAddressTest[4] = 4'b0101;	// 120
+		regWriteOrRead[4] = 2'b00;		// Read
+		regProcessor[4] = 2'b01;		// P0,1
+		regDataTest[4] = 4'b0000;		// vazia
 		
-		
-		// P0,1: write 120 <-- 80
-		
+		// P0,1: write 120 <-- 80 
+		regAddressTest[5] = 4'b0101;	// 120
+		regWriteOrRead[5] = 2'b01;		// Write
+		regProcessor[5] = 2'b01;		// P0,1
+		regDataTest[5] = 4'b1000;		// 80
 		
 		// P0,0: write 120 < -- 90
-		
+		//regAddressTest[6] = 4'b0101;	// 120
+		//regWriteOrRead[6] = 2'b01;		// Write
+		//regProcessor[6] = 2'b00;		// P0,0
+		//regDataTest[6] = 4'b1001;		// 90
 		
 		// P0, 1: read 120
+		//regAddressTest[7] = 4'b0101;	// 120
+		//regWriteOrRead[7] = 2'b00;		// Read
+		//regProcessor[7] = 2'b01;		// P0,1
+		//regDataTest[7] = 4'b0000;		// empty
 		
-		
-		// P0,1: read 100 
+		// P0,1: read 100
+		//regAddressTest[8] = 4'b0001;	// 100
+		//regWriteOrRead[8] = 2'b00;		// Read
+		//regProcessor[8] = 2'b01;		// P0,1
+		//regDataTest[8] = 4'b0000;		// empty
 	end
 	
 	always@(posedge Clock) begin

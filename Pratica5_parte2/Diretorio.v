@@ -8,11 +8,10 @@ module Diretorio(Clock);
 	wire[2:0] StateP0_0;			// Estados
 	wire[3:0] DataCacheP0_0;			// Dados
 	wire[3:0] DataCacheP0_1;			// Dados
-	wire[2:0] BlockP0_0;			// Block
 	wire[1:0] HitOrMissP1;		// Hit em P1
 	wire[1:0] HitOrMissP2;		// Hit em P2s
-	wire[1:0] Signal, Invalidate;
-	
+	wire[1:0] Invalidate;
+	wire[2:0] SignalP1, SignalP2;
 	// Variáveis da Lista Cache L2
 	wire[3:0] AddressLista;		// Endereços
 	wire[2:0] StateLista;		// Estados
@@ -32,9 +31,11 @@ module Diretorio(Clock);
 	
 	Processador1 P1(Clock, AddressTest, WriteOrRead, Processor, DataTest, 
 						HitOrMissP2, HitOrMissP1, AddressMemory, DataMemory, AddressCacheP0_0, 
-						AddressCacheP0_1, DataCacheP0_0, DataCacheP0_1, WriteBack, Signal, Invalidate);
+						AddressLista, DataLista, DataCacheP0_0, WriteBack, SignalP1, Invalidate);
 						
-	Processador2 P2(Clock, AddressTest, WriteOrRead, Processor, DataTest, HitOrMissP2, HitOrMissP1);
+	Processador2 P2(Clock, AddressTest, WriteOrRead, Processor, DataTest, 
+						HitOrMissP2, HitOrMissP1, AddressMemory, DataMemory, AddressCacheP0_1, 
+						AddressLista, DataLista, DataCacheP0_1, SignalP2, Invalidate);
 	
 	CodigoTeste Teste(Clock, AddressTest, WriteOrRead, Processor, DataTest);
 	
@@ -42,7 +43,8 @@ module Diretorio(Clock);
 									HitOrMissP2, HitOrMissP1, AddressCacheP0_0, AddressCacheP0_1, DataCacheP0_0, 
 									DataCacheP0_1, Processor);
 									
-	Lista Diretorio(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, Signal, DataMemory, AddressMemory, Processor, Invalidate, WriteOrRead);
+	Lista Diretorio(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, SignalP1, SignalP2, DataMemory, AddressMemory, 
+						Processor, Invalidate, WriteOrRead);
 endmodule
 
 	

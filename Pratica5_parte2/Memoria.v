@@ -83,8 +83,11 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 							end
 						else if(regAddressMemory[i] == AddressCacheP0_0)
 							begin
-								
 								regDataMemory[i] = DataCacheP0_0;
+							end
+						else if(regAddressMemory[i] == AddressCacheP0_1)
+							begin
+								regDataMemory[i] = DataCacheP0_1;
 							end
 					end
 					

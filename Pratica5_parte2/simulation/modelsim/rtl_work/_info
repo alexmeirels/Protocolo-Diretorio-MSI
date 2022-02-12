@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\Alexm\Desktop\Pessoal\facul\5 Período\Lab Aoc II\LAOC\Protocolo-Diretorio-MSI\Pratica5_parte2\simulation\modelsim
 vCodigoTeste
-IP0ao<@<PWH`<6eGkTD4UF0
+IGzHCoI8oOC?1djmVheGUb2
 Vl<S<m0M17FS43eI>eRF7a2
 Z1 dC:\Users\Alexm\Desktop\Pessoal\facul\5 Período\Lab Aoc II\LAOC\Protocolo-Diretorio-MSI\Pratica5_parte2\simulation\modelsim
-w1644458970
+w1644677944
 8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v
 FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v
 L0 1
@@ -17,17 +17,17 @@ r1
 Z3 o-work work -O0
 n@codigo@teste
 !i10b 1
-!s100 U`i^6LJWC1bREOn=iYmAB2
+!s100 3HdF97_GOC][n>0`7m5]_3
 !s85 0
-!s108 1644460617.373000
+!s108 1644681293.898000
 !s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v|
 !s101 -O0
 vDiretorio
-IDfNMIKe@@UK1defeKMjzI2
+I`Q8Q[bYSM@;fG`meH>F>30
 VWRMm=QnLcVPdlTTEMci<V0
 R1
-w1644447652
+w1644677314
 8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v
 FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v
 L0 1
@@ -37,17 +37,17 @@ r1
 R3
 n@diretorio
 !i10b 1
-!s100 UYhQ[IOYO]AfGoPJUgYeS1
+!s100 iKlVDaYhBeQnWTn]9:jDS1
 !s85 0
-!s108 1644460617.523000
+!s108 1644681293.955000
 !s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v|
 !s101 -O0
 vLista
-Il^S[21H^Z8JA>6TfPdkY33
-VSYKoYRfhSE?ciC@A;6W`M1
+Ig[EYF@Mm8X@E=^h7ebKEd1
+VRaCUcSVgzB^GY0@lhPZf52
 R1
-w1644460612
+w1644681289
 8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v
 FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v
 L0 1
@@ -57,17 +57,17 @@ r1
 R3
 n@lista
 !i10b 1
-!s100 :nL@A_bMU8b:0ka:aF7]k1
+!s100 172`nU0OCan@@;AzM04Jg3
 !s85 0
-!s108 1644460617.672000
+!s108 1644681294.011000
 !s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v|
 !s101 -O0
 vMemoria
-IEA:42>RPJB0>7QZ:d8ZWl3
+IVeZ@RibKa<fJP=O52_C5T3
 V5>;mLB9k06bD^0[`E4UJS1
 R1
-w1644459252
+w1644674959
 8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v
 FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v
 L0 1
@@ -77,17 +77,17 @@ r1
 R3
 n@memoria
 !i10b 1
-!s100 ib2Jz3[eYGZ^UTBTh^:Fo2
+!s100 QP>:aPBnO73=KA4CE3UiV2
 !s85 0
-!s108 1644460617.790000
+!s108 1644681294.067000
 !s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v|
 !s101 -O0
 vProcessador1
-IZ[S5>0jKkmGSzi[GnO3CG1
-V@G2FZeE99Jl9]3K>H9KMg1
+I<S6_:d1R:79LFZ17zNgH00
+VX`<HF@0CKS`E0GzX=P8M02
 R1
-w1644459811
+w1644680603
 8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v
 FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v
 L0 1
@@ -97,19 +97,19 @@ r1
 R3
 n@processador1
 !i10b 1
-!s100 gV;[430YbJY<;=BhWGGej3
+!s100 [8z;fmI>]`bB7:jAgTgmn0
 !s85 0
-!s108 1644460617.940000
+!s108 1644681294.122000
 !s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v|
 !s101 -O0
 vProcessador2
 !i10b 1
-!s100 =Le<f_dN1Ro^T28a][X=80
-I8Tm2IRcZCbjUV3Xb5di811
-V]a>XOR7KVUPXz5FbLGe7[1
+!s100 4i]^@OaTKjS[>9<V;zDl;3
+IDNVm7i<O6RkZz>RP3<hJh0
+VYES`NjI3OKWI`V_d;B7ao0
 R1
-w1644363644
+w1644680680
 8C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v
 FC:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v
 L0 1
@@ -117,7 +117,7 @@ R2
 r1
 !s85 0
 31
-!s108 1644460618.097000
+!s108 1644681294.178000
 !s107 C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v|
 !s101 -O0
