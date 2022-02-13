@@ -1,9 +1,9 @@
 module Processador2(Clock, AddressTest, WriteOrRead, Processor, DataTest, 
 						HitOrMissP2, HitOrMissP1, AddressMemory, DataMemory, AddressCacheP0_1, 
-						AddressLista, DataLista, DataCacheP0_1, SignalP2, Invalidate);
+						AddressLista, DataLista, DataCacheP0_1, SignalP2, Invalidate, DataP1);
 
 	input Clock;
-	input [3:0] AddressTest;		// Endereços
+	input [3:0] AddressTest, DataP1;		// Endereços
 	input [1:0] WriteOrRead; 		// 00 Write e 01 Read
 	input [1:0] Processor; 		// P0,0 or P0,1
 	input [3:0] DataTest;			// Dado
@@ -27,7 +27,7 @@ module Processador2(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 	//output reg[2:0] acaoP0_0;		// Ação do processador
 	
 	// Contador
-	integer cont, i, aux;
+	integer cont, i, aux, aux1;
 
 
 
@@ -44,10 +44,13 @@ module Processador2(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 
 		cont = 0;
 		aux = 0;
+		aux1 = 0;
 	end
 	
 	always@(negedge Clock)begin
 		cont = 0;
+		AddressCacheP0_1 = 4'b0000;
+		DataCacheP0_1 = 4'b0000;
 		SignalP2 = 3'b000;
 	
 				for(i = 0; i < 2; i = i + 1)
@@ -74,6 +77,13 @@ module Processador2(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 						HitOrMissP2 = HitOrMiss;
 
 					end
+		if(HitOrMissP1 == 2'b01 && Processor == 2'b00 && HitOrMissP2 == 2'b01 && WriteOrRead == 2'b01)
+			begin
+				regStateP0_1[0] = 2'b01;			// Estado muda para invalido
+				DataCacheP0_1 = regDataP0_1[0];			// Dado que passará para memória por conta do writeback
+				AddressCacheP0_1 = regAddressP0_1[0];	// Endereço que passará para memória por conta do writeback
+				aux1 = 1;
+			end
 		#2;
 		if(HitOrMissP1 == 2'b01 && Processor == 2'b01)
 			begin
@@ -95,7 +105,12 @@ module Processador2(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 					Invalidate = 2'b01;				// Invalidação
 				end
 			end
-		
+		if(HitOrMissP1 == 2'b01 && HitOrMissP2 == 2'b01 && Processor == 2'b01 && aux1 == 1)
+			begin 
+				regStateP0_1[0] = 2'b10;			//	Muda o estado para shared
+				regDataP0_1[0] = DataP1;			// Recebe o valor da cache1
+				SignalP2 = 3'b001;					// ReadMiss
+			end
 	end
 endmodule
 /* Address

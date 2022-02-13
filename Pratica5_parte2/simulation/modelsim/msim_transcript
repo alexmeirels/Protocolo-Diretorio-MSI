@@ -2117,3 +2117,2161 @@ vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Perí
 # 
 # Top level modules:
 # 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v(14): near "3": syntax error, unexpected INTEGER NUMBER
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P1/regAddressP0_0 \
+sim:/Diretorio/P1/regStateP0_0 \
+sim:/Diretorio/P1/regDataP0_0
+restart
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P1/cont
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/HitOrMissP1
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/HitOrMissP2
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+add wave -position insertpoint  \
+sim:/Diretorio/P2/regAddressP0_1 \
+sim:/Diretorio/P2/regStateP0_1 \
+sim:/Diretorio/P2/regDataP0_1
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(148): (vlog-2730) Undefined variable: 'Signal'.
+# 
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(148): near "'1": syntax error, unexpected UNSIZED_BIT
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(154): near "end": syntax error, unexpected end
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(148): (vlog-2730) Undefined variable: 'Signal'.
+# 
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+add wave -position insertpoint  \
+sim:/Diretorio/Diretorio/regAddressLista \
+sim:/Diretorio/Diretorio/regStateLista \
+sim:/Diretorio/Diretorio/regDataLista \
+sim:/Diretorio/Diretorio/regSharersLista
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+add wave -position insertpoint  \
+sim:/Diretorio/MemoriaPrincipal/regAddressMemory \
+sim:/Diretorio/MemoriaPrincipal/regDataMemory
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/WriteBack
+restart
+run
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P1/cont
+add wave -position insertpoint  \
+sim:/Diretorio/MemoriaPrincipal/testeMemory
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/AddressCacheP0_0
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P2/regAddressP0_1 \
+sim:/Diretorio/P2/regDataP0_1
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(101): (vlog-2730) Undefined variable: 'DataCacheP0_0'.
+# 
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(102): (vlog-2730) Undefined variable: 'AddressCacheP0_0'.
+# 
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(106): near "=": syntax error, unexpected '=', expecting ++ or --
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v(106): (vlog-2730) Undefined variable: 'Processador'.
+# 
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+add wave -position insertpoint  \
+sim:/Diretorio/P2/cont
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+add wave -position insertpoint  \
+sim:/Diretorio/Diretorio/regAddressLista \
+sim:/Diretorio/Diretorio/regStateLista \
+sim:/Diretorio/Diretorio/regDataLista \
+sim:/Diretorio/Diretorio/regSharersLista \
+sim:/Diretorio/Diretorio/signalSharers
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P1/regAddressP0_0 \
+sim:/Diretorio/P1/regStateP0_0 \
+sim:/Diretorio/P1/regDataP0_0
+add wave -position insertpoint  \
+sim:/Diretorio/P2/regAddressP0_1 \
+sim:/Diretorio/P2/regStateP0_1 \
+sim:/Diretorio/P2/regDataP0_1
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+add wave -position insertpoint  \
+sim:/Diretorio/Diretorio/regAddressLista \
+sim:/Diretorio/Diretorio/regStateLista \
+sim:/Diretorio/Diretorio/regDataLista \
+sim:/Diretorio/Diretorio/regSharersLista \
+sim:/Diretorio/Diretorio/signalSharers
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(160): near "'1": syntax error, unexpected UNSIZED_BIT, expecting ';'
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+add wave -position insertpoint  \
+sim:/Diretorio/MemoriaPrincipal/regAddressMemory \
+sim:/Diretorio/MemoriaPrincipal/regDataMemory
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P1/regAddressP0_0 \
+sim:/Diretorio/P1/regStateP0_0 \
+sim:/Diretorio/P1/regDataP0_0
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run
+add wave -position insertpoint  \
+sim:/Diretorio/P2/regAddressP0_1 \
+sim:/Diretorio/P2/regStateP0_1 \
+sim:/Diretorio/P2/regDataP0_1
+restart
+run
+add wave -position insertpoint  \
+sim:/Diretorio/DataCacheP0_0 \
+sim:/Diretorio/DataCacheP0_1
+restart
+run
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v(68): (vlog-2730) Undefined variable: 'AddressCacheP0_1'.
+# 
+# ** Error: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v(69): (vlog-2730) Undefined variable: 'DataCacheP0_1'.
+# 
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CodigoTeste
+# 
+# Top level modules:
+# 	CodigoTeste
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Diretorio
+# 
+# Top level modules:
+# 	Diretorio
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Lista
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(108): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(116): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(126): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v(133): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	Lista
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Memoria
+# 
+# Top level modules:
+# 	Memoria
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador1
+# 
+# Top level modules:
+# 	Processador1
+vlog -reportprogress 300 -work work {C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Processador2
+# 
+# Top level modules:
+# 	Processador2
+restart
+# Loading work.Diretorio
+# Loading work.Processador1
+# Loading work.Processador2
+# Loading work.CodigoTeste
+# Loading work.Memoria
+# Loading work.Lista
+run

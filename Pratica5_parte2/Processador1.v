@@ -1,6 +1,7 @@
 module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest, 
 						HitOrMissP2, HitOrMissP1, AddressMemory, DataMemory, AddressCacheP0_0, 
-						AddressLista, DataLista, DataCacheP0_0, WriteBack, SignalP1, Invalidate);
+						AddressLista, DataLista, DataCacheP0_0, WriteBack, SignalP1, Invalidate,
+						DataP1);
 
 	input Clock;
 
@@ -14,7 +15,7 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 	input [3:0] AddressMemory, DataMemory;
 	
 	output reg[1:0] HitOrMissP1;
-	output reg[3:0] AddressLista, DataLista, AddressCacheP0_0, DataCacheP0_0;
+	output reg[3:0] AddressLista, DataLista, AddressCacheP0_0, DataCacheP0_0, DataP1;
 	 
 	output reg[1:0] Invalidate, WriteBack;
 	output reg[2:0] SignalP1;
@@ -64,6 +65,8 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 		Invalidate = 2'b00;
 		cont = 0;
 		WriteBack = 2'b00;
+		AddressCacheP0_0 = 4'b0000;
+		DataCacheP0_0 = 4'b0000;
 		//------------------------------------------------------------------------------------------------------
 		// Máquina 1
 		// Verifica se deu miss na cache ou hit	
@@ -76,7 +79,6 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 									begin
 										HitOrMiss = 2'b00;
 										HitOrMissP1 = 2'b01;
-										
 									end
 								else	// Read hit
 									begin
@@ -91,6 +93,15 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 						HitOrMissP1 = HitOrMiss;
 						
 					end
+		if(HitOrMissP1 == 2'b01 && HitOrMissP2 == 2'b01 && Processor == 2'b01 && WriteOrRead == 2'b00)
+			begin
+				DataP1 = regDataP0_0[0];	// Valor que vai ser passado para cache2
+				regStateP0_0[0] = 2'b10;	// O estado é mudado para Shared
+				WriteBack = 2'b01;			// Acontece WriteBack
+				Invalidate = 2'b01;
+				DataCacheP0_0 = 4'b1001;			// Dado que passará para memória por conta do writeback
+				AddressCacheP0_0 = regAddressP0_0[0];	// Endereço que passará para memória por conta do writeback
+			end
 		if(HitOrMissP2 == 2'b00 && Processor == 2'b01 && aux1 == 0)
 			begin
 				WriteBack = 2'b01;
@@ -104,6 +115,13 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 				Invalidate = 2'b01;
 				
 			end
+		if(HitOrMissP1 == 2'b01 && HitOrMissP2 == 2'b01 && WriteOrRead == 2'b01 && Processor == 2'b00)
+				begin
+					SignalP1 = 3'b100;				// Fetch Invalidate
+					regStateP0_0[0] = 2'b11;		// o estado foi mudado para modificado
+					regDataP0_0[0] = DataTest;		// Escreve o dado passado
+					WriteBack = 2'b01;
+				end
 			
 		if(HitOrMissP2 == 2'b00 && Processor == 2'b00)
 			begin
@@ -116,7 +134,7 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 					AddressCacheP0_0 = regAddressP0_0[0];	// Endereço que passará para memória por conta do writeback
 					regAddressP0_0[0] <= AddressMemory;	// Recebe o valor da memória
 					regDataP0_0[0] <= DataMemory;			// Recebe o valor da memória
-					regStateP0_0[0] = 2'b10;
+					regStateP0_0[0] = 2'b11;				// Fetch 
 				end
 			if(HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && WriteOrRead == 2'b00 && HitOrMiss == 2'b00 && aux != 1) // ReadMiss
 				begin
@@ -127,7 +145,6 @@ module Processador1(Clock, AddressTest, WriteOrRead, Processor, DataTest,
 					regStateP0_0[1] = 2'b10;				//	O estado é mudado para Shared
 					aux = 1;
 				end
-			
 			end
 		if(WriteOrRead == 2'b01 && HitOrMiss == 2'b01 && regStateP0_0[1] == 2'b10)	// Write Miss - Shared
 			begin
@@ -184,3 +201,9 @@ endmodule
 	Invalidate	- 	2'b11
 	
 	*/
+	/*SignalP2
+		empty 	  - 00
+		ReadMiss	  - 01
+		WriteMiss  - 10
+		Fetch 	  - 11
+		Fetch Invalidate - 100*/

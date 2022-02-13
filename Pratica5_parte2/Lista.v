@@ -145,6 +145,20 @@ module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, SignalP1, S
 				regStateLista[0] = 2'b11;					// O estado é mudado para modificado
 				regSharersLista[0] = 2'b10;				// P0_1
 			end
+		if(SignalP1 == 3'b100 && WriteOrRead == 2'b01 && HitOrMissP1 == 2'b01 && HitOrMissP2 == 2'b01)
+			begin
+				regDataLista[0] = DataTest;	// escreve o valor passado
+				regStateLista[0] = 2'b11;		// O estado é mudado para modificado
+				signalSharers = 2'b10;			// Sharers = {P}
+				regSharersLista[0] = 2'b01;	// P0_0
+			end
+		if(SignalP2 == 3'b001 && Invalidate == 2'b01 && HitOrMissP1 == 2'b01 && HitOrMissP2 == 2'b01) 
+			begin
+				regStateLista[0] = 2'b10;		// O estado é mudado para Shared
+				signalSharers = 2'b11;			// Sharers = {P} + Sharers
+				regSharersLista[0] = 2'b11;	// P0_1 + P0_0
+				regDataLista[0] = 4'b1001;
+			end
 	end
 
 endmodule

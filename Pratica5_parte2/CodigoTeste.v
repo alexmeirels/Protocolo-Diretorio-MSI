@@ -80,23 +80,23 @@ module CodigoTeste(Clock, AddressTest, WriteOrRead, Processor, DataTest);
 		regProcessor[4] = 2'b01;		// P0,1
 		regDataTest[4] = 4'b0000;		// vazia
 		
-		// P0,1: write 120 <-- 80 
+		// P0,1: write 120 <-- 80 - Feito
 		regAddressTest[5] = 4'b0101;	// 120
 		regWriteOrRead[5] = 2'b01;		// Write
 		regProcessor[5] = 2'b01;		// P0,1
 		regDataTest[5] = 4'b1000;		// 80
 		
-		// P0,0: write 120 < -- 90
-		//regAddressTest[6] = 4'b0101;	// 120
-		//regWriteOrRead[6] = 2'b01;		// Write
-		//regProcessor[6] = 2'b00;		// P0,0
-		//regDataTest[6] = 4'b1001;		// 90
+		// P0,0: write 120 < -- 90 - Feito
+		regAddressTest[6] = 4'b0101;	// 120
+		regWriteOrRead[6] = 2'b01;		// Write
+		regProcessor[6] = 2'b00;		// P0,0
+		regDataTest[6] = 4'b1001;		// 90
 		
 		// P0, 1: read 120
-		//regAddressTest[7] = 4'b0101;	// 120
-		//regWriteOrRead[7] = 2'b00;		// Read
-		//regProcessor[7] = 2'b01;		// P0,1
-		//regDataTest[7] = 4'b0000;		// empty
+		regAddressTest[7] = 4'b0101;	// 120
+		regWriteOrRead[7] = 2'b00;		// Read
+		regProcessor[7] = 2'b01;		// P0,1
+		regDataTest[7] = 4'b0000;		// empty
 		
 		// P0,1: read 100
 		//regAddressTest[8] = 4'b0001;	// 100

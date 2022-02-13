@@ -15,7 +15,8 @@ entity Processador2 is
         AddressLista    : out    vl_logic_vector(3 downto 0);
         DataLista       : out    vl_logic_vector(3 downto 0);
         DataCacheP0_1   : out    vl_logic_vector(3 downto 0);
-        SignalP2        : out    vl_logic_vector(1 downto 0);
-        Invalidate      : out    vl_logic_vector(1 downto 0)
+        SignalP2        : out    vl_logic_vector(2 downto 0);
+        Invalidate      : out    vl_logic_vector(1 downto 0);
+        DataP1          : in     vl_logic_vector(3 downto 0)
     );
 end Processador2;

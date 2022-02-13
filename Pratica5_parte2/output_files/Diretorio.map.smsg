@@ -1,4 +1,2 @@
-Warning (10268): Verilog HDL information at Processador1.v(61): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at Processador1.v(63): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at Memoria.v(43): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at Lista.v(103): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at Processador2.v(49): always construct contains both blocking and non-blocking assignments

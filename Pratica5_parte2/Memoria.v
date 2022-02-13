@@ -42,6 +42,7 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 	
 	always@(negedge Clock)begin
 		#1
+		testeMemory = 0;
 		if(WriteBack == 2'b00 && HitOrMissP2 == 2'b00 && HitOrMissP1 == 2'b00) //  FICAR DE OLHO NESSA LINHA
 			begin
 				for(i = 0; i < 8; i = i + 1)
@@ -50,7 +51,6 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 							begin
 								if(Processor == 2'b00)
 									begin
-										testeMemory = 1000;
 										AddressMemory <= regAddressMemory[i];
 										DataMemory <= regDataMemory[i];
 									end
@@ -63,15 +63,15 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 					end
 				end
 				
-			if(WriteBack == 2'b01 && HitOrMissP1 == 2'b00 && HitOrMissP1 == 2'b00) //  FICAR DE OLHO NESSA LINHA
+			if(WriteBack == 2'b01 && HitOrMissP1 == 2'b00 && HitOrMissP1 == 2'b00) 
 			begin
+				
 				for(i = 0; i < 8; i = i + 1)
 					begin
 						if(regAddressMemory[i] == AddressTest)
 							begin
 								if(Processor == 2'b00)
 									begin
-										testeMemory = 1000;
 										AddressMemory <= regAddressMemory[i];
 										DataMemory <= regDataMemory[i];
 									end
@@ -81,11 +81,42 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 										DataMemory <= regDataMemory[i];
 									end
 							end
-						else if(regAddressMemory[i] == AddressCacheP0_0)
+						if(regAddressMemory[i] == AddressCacheP0_0)
+							begin
+								
+								regDataMemory[i] = DataCacheP0_0;
+							end
+						if(regAddressMemory[i] == AddressCacheP0_1)
+							begin
+								regDataMemory[i] = DataCacheP0_1;
+							end
+					end
+					
+				end
+				
+			if(WriteBack == 2'b01 && HitOrMissP1 == 2'b01 && HitOrMissP1 == 2'b01) 
+			begin
+				
+				for(i = 0; i < 8; i = i + 1)
+					begin
+						if(regAddressMemory[i] == AddressTest)
+							begin
+								if(Processor == 2'b00)
+									begin
+										AddressMemory <= regAddressMemory[i];
+										DataMemory <= regDataMemory[i];
+									end
+								else if(Processor == 2'b01)
+									begin
+										AddressMemory <= regAddressMemory[i];
+										DataMemory <= regDataMemory[i];
+									end
+							end
+						if(regAddressMemory[i] == AddressCacheP0_0)
 							begin
 								regDataMemory[i] = DataCacheP0_0;
 							end
-						else if(regAddressMemory[i] == AddressCacheP0_1)
+						if(regAddressMemory[i] == AddressCacheP0_1)
 							begin
 								regDataMemory[i] = DataCacheP0_1;
 							end

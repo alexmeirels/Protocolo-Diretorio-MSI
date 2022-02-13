@@ -7,8 +7,8 @@ entity Lista is
         DataTest        : in     vl_logic_vector(3 downto 0);
         HitOrMissP2     : in     vl_logic_vector(1 downto 0);
         HitOrMissP1     : in     vl_logic_vector(1 downto 0);
-        SignalP1        : in     vl_logic_vector(1 downto 0);
-        SignalP2        : in     vl_logic_vector(1 downto 0);
+        SignalP1        : in     vl_logic_vector(2 downto 0);
+        SignalP2        : in     vl_logic_vector(2 downto 0);
         DataMemory      : in     vl_logic_vector(3 downto 0);
         AddressMemory   : in     vl_logic_vector(3 downto 0);
         Processor       : in     vl_logic_vector(1 downto 0);
