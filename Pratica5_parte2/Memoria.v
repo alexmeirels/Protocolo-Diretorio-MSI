@@ -43,7 +43,7 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 	always@(negedge Clock)begin
 		#1
 		testeMemory = 0;
-		if(WriteBack == 2'b00 && HitOrMissP2 == 2'b00 && HitOrMissP1 == 2'b00) //  FICAR DE OLHO NESSA LINHA
+		if(WriteBack == 2'b00 && HitOrMissP2 == 2'b00 && HitOrMissP1 == 2'b00) 
 			begin
 				for(i = 0; i < 8; i = i + 1)
 					begin
@@ -125,31 +125,5 @@ module Memoria(Clock, AddressMemory, DataMemory, WriteBack, AddressTest, DataTes
 				end
 	
 	end
-	
-		/* Address
-	empty - 0000
-	100	- 0001
-	108	- 0010
-	110	- 0011
-	118	- 0100
-	120	- 0101
-	128	- 0110
-	130	- 0111
-	138	- 1000
------------------
-	Data
-	empty - 0000
-	08	- 0001
-	10 - 0010
-	18 - 0011
-	20 - 0100
-	28 - 0101
-	68 - 0110
-	78 - 0111
-	80 - 1000
-	90 - 1001
-	96 - 1010
------------------
-	*/
 endmodule
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Diretorio
-Sat Feb 12 18:43:26 2022
+Sun Feb 13 02:11:42 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,19 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Diretorio|Processador2:P2|HitOrMiss
+  9. State Machine - |Diretorio|Processador1:P1|HitOrMiss
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Port Connectivity Checks: "Processador1:P1"
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -37,20 +48,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Feb 12 18:43:25 2022               ;
+; Analysis & Synthesis Status        ; Successful - Sun Feb 13 02:11:42 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Diretorio                                       ;
 ; Top-level Entity Name              ; Diretorio                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; N/A until Partition Merge                       ;
-;     Total combinational functions  ; N/A until Partition Merge                       ;
-;     Dedicated logic registers      ; N/A until Partition Merge                       ;
-; Total registers                    ; N/A until Partition Merge                       ;
-; Total pins                         ; N/A until Partition Merge                       ;
-; Total virtual pins                 ; N/A until Partition Merge                       ;
-; Total memory bits                  ; N/A until Partition Merge                       ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
-; Total PLLs                         ; N/A until Partition Merge                       ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 1                                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -150,13 +161,218 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                          ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
+; Processador1.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v ;         ;
+; Diretorio.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Diretorio.v    ;         ;
+; Memoria.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Memoria.v      ;         ;
+; Lista.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Lista.v        ;         ;
+; CodigoTeste.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/CodigoTeste.v  ;         ;
+; Processador2.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador2.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |Diretorio                 ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 1    ; 0            ; |Diretorio          ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------+
+; State Machine - |Diretorio|Processador2:P2|HitOrMiss ;
++--------------+---------------------------------------+
+; Name         ; HitOrMiss.01                          ;
++--------------+---------------------------------------+
+; HitOrMiss.00 ; 0                                     ;
+; HitOrMiss.01 ; 1                                     ;
++--------------+---------------------------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------+
+; State Machine - |Diretorio|Processador1:P1|HitOrMiss ;
++--------------+---------------------------------------+
+; Name         ; HitOrMiss.01                          ;
++--------------+---------------------------------------+
+; HitOrMiss.00 ; 0                                     ;
+; HitOrMiss.01 ; 1                                     ;
++--------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++----------------------------------------------+--------------------------------------------------+
+; Register name                                ; Reason for Removal                               ;
++----------------------------------------------+--------------------------------------------------+
+; Processador2:P2|aux2[1..31]                  ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|WriteBack[1]                 ; Stuck at GND due to stuck port data_in           ;
+; Processador2:P2|aux[1..31]                   ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|aux[1..31]                   ; Stuck at GND due to stuck port data_in           ;
+; Processador2:P2|aux1[2..31]                  ; Merged with Processador2:P2|aux1[1]              ;
+; Processador1:P1|aux1[2..31]                  ; Merged with Processador1:P1|aux1[1]              ;
+; Processador2:P2|aux1[1]                      ; Stuck at GND due to stuck port data_in           ;
+; Processador2:P2|HitOrMissP2[1]               ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|aux1[1]                      ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|regStateP0_0[1][2]           ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|HitOrMissP1[1]               ; Stuck at GND due to stuck port data_in           ;
+; CodigoTeste:Teste|AddressTest[1..3]          ; Stuck at GND due to stuck port data_in           ;
+; CodigoTeste:Teste|WriteOrRead[0,1]           ; Stuck at GND due to stuck port data_in           ;
+; CodigoTeste:Teste|Processor[0,1]             ; Stuck at GND due to stuck port data_in           ;
+; Processador2:P2|aux2[0]                      ; Lost fanout                                      ;
+; Processador2:P2|aux[0]                       ; Lost fanout                                      ;
+; Processador2:P2|aux1[0]                      ; Lost fanout                                      ;
+; Processador1:P1|aux1[0]                      ; Lost fanout                                      ;
+; Processador2:P2|regAddressP0_1[0][3]         ; Stuck at GND due to stuck port data_in           ;
+; Processador2:P2|regAddressP0_1[0][2]         ; Stuck at VCC due to stuck port data_in           ;
+; Processador2:P2|regAddressP0_1[0][1]         ; Stuck at VCC due to stuck port data_in           ;
+; Processador2:P2|regAddressP0_1[0][0]         ; Stuck at VCC due to stuck port data_in           ;
+; Processador2:P2|regStateP0_1[0][0]           ; Stuck at VCC due to stuck port data_in           ;
+; Processador2:P2|regStateP0_1[0][1]           ; Stuck at VCC due to stuck port data_in           ;
+; Processador2:P2|regStateP0_1[0][2]           ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|regStateP0_0[1][0]           ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|regStateP0_0[0][2]           ; Stuck at GND due to stuck port data_in           ;
+; Processador2:P2|HitOrMissP2[0]               ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|regStateP0_0[1][1]           ; Lost fanout                                      ;
+; Processador1:P1|regStateP0_0[0][0]           ; Stuck at VCC due to stuck port data_in           ;
+; Processador1:P1|regStateP0_0[0][1]           ; Stuck at VCC due to stuck port data_in           ;
+; Memoria:MemoriaPrincipal|AddressMemory[1..3] ; Stuck at GND due to stuck port data_in           ;
+; Memoria:MemoriaPrincipal|AddressMemory[0]    ; Stuck at VCC due to stuck port data_in           ;
+; Processador1:P1|WriteBack[0]                 ; Lost fanout                                      ;
+; Processador1:P1|regAddressP0_0[0][3]         ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|regAddressP0_0[0][2]         ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|regAddressP0_0[0][1]         ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|regAddressP0_0[0][0]         ; Stuck at VCC due to stuck port data_in           ;
+; Processador1:P1|regAddressP0_0[1][3]         ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|regAddressP0_0[1][2]         ; Stuck at GND due to stuck port data_in           ;
+; Processador1:P1|HitOrMissP1[0]               ; Lost fanout                                      ;
+; Processador1:P1|aux[0]                       ; Merged with Processador1:P1|regAddressP0_0[1][0] ;
+; Processador1:P1|regAddressP0_0[1][0]         ; Merged with Processador1:P1|regAddressP0_0[1][1] ;
+; Processador1:P1|regAddressP0_0[1][1]         ; Lost fanout                                      ;
+; Processador2:P2|HitOrMiss.01                 ; Lost fanout                                      ;
+; Processador1:P1|HitOrMiss.01                 ; Lost fanout                                      ;
+; CodigoTeste:Teste|AddressTest[0]             ; Lost fanout                                      ;
+; Processador2:P2|HitOrMiss~5                  ; Lost fanout                                      ;
+; Processador1:P1|HitOrMiss~5                  ; Lost fanout                                      ;
+; CodigoTeste:Teste|cont[0..31]                ; Lost fanout                                      ;
+; Total Number of Removed Registers = 235      ;                                                  ;
++----------------------------------------------+--------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                       ;
++------------------------------------+---------------------------+----------------------------------------------------------------------------------+
+; Register name                      ; Reason for Removal        ; Registers Removed due to This Register                                           ;
++------------------------------------+---------------------------+----------------------------------------------------------------------------------+
+; Processador2:P2|aux2[18]           ; Stuck at GND              ; Processador2:P2|regAddressP0_1[0][3], Processador2:P2|regAddressP0_1[0][2],      ;
+;                                    ; due to stuck port data_in ; Processador2:P2|regAddressP0_1[0][1], Processador2:P2|regAddressP0_1[0][0],      ;
+;                                    ;                           ; Processador2:P2|regStateP0_1[0][0], Processador2:P2|regStateP0_1[0][1],          ;
+;                                    ;                           ; Processador2:P2|regStateP0_1[0][2], Processador2:P2|HitOrMissP2[0],              ;
+;                                    ;                           ; Processador1:P1|HitOrMissP1[0], CodigoTeste:Teste|AddressTest[0],                ;
+;                                    ;                           ; CodigoTeste:Teste|cont[0], CodigoTeste:Teste|cont[1], CodigoTeste:Teste|cont[2], ;
+;                                    ;                           ; CodigoTeste:Teste|cont[3], CodigoTeste:Teste|cont[4], CodigoTeste:Teste|cont[5]  ;
+; Processador1:P1|WriteBack[1]       ; Stuck at GND              ; Memoria:MemoriaPrincipal|AddressMemory[3],                                       ;
+;                                    ; due to stuck port data_in ; Memoria:MemoriaPrincipal|AddressMemory[2],                                       ;
+;                                    ;                           ; Memoria:MemoriaPrincipal|AddressMemory[1],                                       ;
+;                                    ;                           ; Memoria:MemoriaPrincipal|AddressMemory[0], Processador1:P1|WriteBack[0],         ;
+;                                    ;                           ; Processador1:P1|regAddressP0_0[1][1]                                             ;
+; Processador2:P2|HitOrMissP2[1]     ; Stuck at GND              ; Processador1:P1|regStateP0_0[0][2], Processador1:P1|regStateP0_0[1][1],          ;
+;                                    ; due to stuck port data_in ; Processador1:P1|regStateP0_0[0][0], Processador1:P1|regStateP0_0[0][1],          ;
+;                                    ;                           ; Processador1:P1|regAddressP0_0[1][3], Processador1:P1|regAddressP0_0[1][2]       ;
+; Processador1:P1|HitOrMissP1[1]     ; Stuck at GND              ; Processador1:P1|regAddressP0_0[0][3], Processador1:P1|regAddressP0_0[0][2],      ;
+;                                    ; due to stuck port data_in ; Processador1:P1|regAddressP0_0[0][1], Processador1:P1|regAddressP0_0[0][0]       ;
+; CodigoTeste:Teste|WriteOrRead[0]   ; Stuck at GND              ; Processador2:P2|aux2[0], Processador2:P2|aux[0], Processador2:P2|aux1[0]         ;
+;                                    ; due to stuck port data_in ;                                                                                  ;
+; Processador1:P1|aux1[1]            ; Stuck at GND              ; Processador1:P1|aux1[0]                                                          ;
+;                                    ; due to stuck port data_in ;                                                                                  ;
+; Processador1:P1|regStateP0_0[1][2] ; Stuck at GND              ; Processador1:P1|regStateP0_0[1][0]                                               ;
+;                                    ; due to stuck port data_in ;                                                                                  ;
++------------------------------------+---------------------------+----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 5:1                ; 4 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |Diretorio|Memoria:MemoriaPrincipal|AddressMemory[3] ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Diretorio|Processador1:P1|HitOrMiss                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processador1:P1"                                                                            ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; AddressLista ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; DataLista    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Feb 12 18:43:25 2022
+    Info: Processing started: Sun Feb 13 02:11:41 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Diretorio -c Diretorio
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file processador1.v
@@ -171,14 +387,64 @@ Info (12021): Found 1 design units, including 1 entities, in source file codigot
     Info (12023): Found entity 1: CodigoTeste
 Info (12021): Found 1 design units, including 1 entities, in source file processador2.v
     Info (12023): Found entity 1: Processador2
-Error (10161): Verilog HDL error at Processador1.v(68): object "AddressCacheP0_1" is not declared File: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v Line: 68
-Error (10161): Verilog HDL error at Processador1.v(69): object "DataCacheP0_1" is not declared File: C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/Processador1.v Line: 69
+Info (12127): Elaborating entity "Diretorio" for the top level hierarchy
+Info (12128): Elaborating entity "Processador1" for hierarchy "Processador1:P1"
+Warning (10034): Output port "AddressLista" at Processador1.v(18) has no driver
+Warning (10034): Output port "DataLista" at Processador1.v(18) has no driver
+Info (12128): Elaborating entity "Processador2" for hierarchy "Processador2:P2"
+Warning (10034): Output port "AddressLista" at Processador2.v(15) has no driver
+Warning (10034): Output port "DataLista" at Processador2.v(15) has no driver
+Info (12128): Elaborating entity "CodigoTeste" for hierarchy "CodigoTeste:Teste"
+Warning (10030): Net "regAddressTest.data_a" at CodigoTeste.v(11) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regAddressTest.waddr_a" at CodigoTeste.v(11) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regWriteOrRead.data_a" at CodigoTeste.v(12) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regWriteOrRead.waddr_a" at CodigoTeste.v(12) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regProcessor.data_a" at CodigoTeste.v(13) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regProcessor.waddr_a" at CodigoTeste.v(13) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regDataTest.data_a" at CodigoTeste.v(14) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regDataTest.waddr_a" at CodigoTeste.v(14) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regAddressTest.we_a" at CodigoTeste.v(11) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regWriteOrRead.we_a" at CodigoTeste.v(12) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regProcessor.we_a" at CodigoTeste.v(13) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "regDataTest.we_a" at CodigoTeste.v(14) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "Memoria" for hierarchy "Memoria:MemoriaPrincipal"
+Warning (10036): Verilog HDL or VHDL warning at Memoria.v(14): object "testeMemory" assigned a value but never read
+Info (12128): Elaborating entity "Lista" for hierarchy "Lista:List"
+Warning (10036): Verilog HDL or VHDL warning at Lista.v(18): object "regAddressLista" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Lista.v(19): object "regStateLista" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Lista.v(20): object "regDataLista" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Lista.v(21): object "regSharersLista" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Lista.v(22): object "signalSharers" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Lista.v(26): object "cont" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at Lista.v(76): truncated value with size 3 to match size of target (2)
+Warning (10230): Verilog HDL assignment warning at Lista.v(79): truncated value with size 3 to match size of target (2)
+Warning (10230): Verilog HDL assignment warning at Lista.v(82): truncated value with size 3 to match size of target (2)
+Warning (10230): Verilog HDL assignment warning at Lista.v(85): truncated value with size 3 to match size of target (2)
+Warning (12158): Entity "Lista" contains only dangling pins
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276004): RAM logic "CodigoTeste:Teste|regAddressTest" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "CodigoTeste:Teste|regWriteOrRead" is uninferred due to inappropriate RAM size
+    Info (276004): RAM logic "CodigoTeste:Teste|regProcessor" is uninferred due to inappropriate RAM size
+Critical Warning (127005): Memory depth (16) in the design file differs from memory depth (9) in the Memory Initialization File "C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/db/Diretorio.ram0_CodigoTeste_c8b121e3.hdl.mif" -- setting initial value for remaining addresses to 0
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/db/Diretorio.ram0_CodigoTeste_c8b121e3.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Critical Warning (127005): Memory depth (16) in the design file differs from memory depth (9) in the Memory Initialization File "C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/db/Diretorio.ram1_CodigoTeste_c8b121e3.hdl.mif" -- setting initial value for remaining addresses to 0
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/db/Diretorio.ram1_CodigoTeste_c8b121e3.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Critical Warning (127005): Memory depth (16) in the design file differs from memory depth (9) in the Memory Initialization File "C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/db/Diretorio.ram2_CodigoTeste_c8b121e3.hdl.mif" -- setting initial value for remaining addresses to 0
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/db/Diretorio.ram2_CodigoTeste_c8b121e3.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (17049): 45 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/Alexm/Desktop/Pessoal/facul/5 Período/Lab Aoc II/LAOC/Protocolo-Diretorio-MSI/Pratica5_parte2/output_files/Diretorio.map.smsg
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4572 megabytes
-    Error: Processing ended: Sat Feb 12 18:43:26 2022
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Clock"
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 4593 megabytes
+    Info: Processing ended: Sun Feb 13 02:11:42 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +------------------------------------------+

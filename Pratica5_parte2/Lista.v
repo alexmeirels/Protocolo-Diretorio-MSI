@@ -65,18 +65,7 @@ module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, SignalP1, S
 	B3 - 100
 	*/
 	
-	/* Sharers
-	empty - 000
-	P0,0 - 001
-	P0,1 - 010
-	P0,0 e P0,1 - 011
-	-----------------------
-	Signal Sharers
-	empty - 000
-	Sharers = {}  			   - 01, data vlaue reply
-	Sharers = {P} 				- 10, data vlaue reply
-	Sharers = Sharers + {P} - 11, data vlaue reply
-	*/
+	
 	
 	
 	initial begin
@@ -99,6 +88,7 @@ module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, SignalP1, S
 //------------------------------------------------------------------------------------------
 	cont = 0;
 	aux = 0;
+	aux1 = 0;
 	end
 	
 	always@(negedge Clock) begin
@@ -108,8 +98,8 @@ module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, SignalP1, S
 		if(SignalP1 == 2'b001 && HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && Processor == 2'b00 && aux ==1) // Letra D
 			begin
 				signalSharers = 2'b11;						// Sharers = Sharers + {P}
-				regAddressLista[0] <= AddressMemory;
-				regDataLista[0] <= DataMemory;
+				regAddressLista[0] <= AddressMemory;	// Recebe o endereço da memoria
+				regDataLista[0] <= DataMemory;			// Recebe o dado da memória
 				regSharersLista[0] = 2'b01;				// P0_0
 				regStateLista[0] = 2'b10;					//	O estado é mudado para Shared
 			end
@@ -121,9 +111,10 @@ module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, SignalP1, S
 				regSharersLista[1] = 2'b01;				// P0_0
 				signalSharers = 2'b11;						// Sharers = Sharers + {P}
 				aux = 1;
+				aux1 = 1;
 			end
 			
-		if(SignalP1 == 2'b010 && Invalidate == 2'b01 && HitOrMissP1 == 2'b01 && WriteOrRead == 2'b01) // Letra c
+		if(SignalP1 == 2'b010 && HitOrMissP1 == 2'b01 && WriteOrRead == 2'b01 && aux1 == 1) // Letra c
 			begin
 				signalSharers = 2'b10;						// Sharers = {P}
 				regSharersLista[1] = 2'b01;				// P0_0
@@ -158,6 +149,16 @@ module Lista(Clock, AddressTest, DataTest, HitOrMissP2, HitOrMissP1, SignalP1, S
 				signalSharers = 2'b11;			// Sharers = {P} + Sharers
 				regSharersLista[0] = 2'b11;	// P0_1 + P0_0
 				regDataLista[0] = 4'b1001;
+			end
+		if(SignalP2 == 3'b001  && HitOrMissP1 == 2'b00 && HitOrMissP2 == 2'b00 && Processor == 2'b01)
+			begin
+				regStateLista[0] = 2'b10; 	// Estado mudou para shared
+				regSharersLista[0] = 2'b01;// P0_0
+				regAddressLista[0] = AddressTest;
+				regDataLista[2] = 4'b0010;
+				signalSharers = 2'b11;		//Sharers = Sharers + {P}
+				regStateLista[2] = 2'b10;	// Estado mudou para shared
+				regSharersLista[2] = 2'b10;// P0_1
 			end
 	end
 
